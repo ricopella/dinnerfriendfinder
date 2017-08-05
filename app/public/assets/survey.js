@@ -10,7 +10,7 @@ $("#submit-survey").on("click", function(event) {
         }
         // console.log(newFriend);
 
-    $.post("/api/friends", newFriend, function(data) {
+    $.post("/api/addFriend", newFriend, function(data) {
         if (data) {
             alert("Form submitted, See who you match with.")
         }

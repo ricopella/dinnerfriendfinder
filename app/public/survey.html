@@ -11,7 +11,7 @@
 
 <body>
     <div class="container">
-        <form action="" method="POST">
+        <form>
             <h1>Survey Questions</h1>
             <hr/>
             <h3><strong>About Me</strong></h3>
@@ -143,6 +143,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <!-- <script scr="./assets/survey.js"></script> -->
     <script>
         console.log("yup!");
         $("#submit-survey").on("click", function(event) {
@@ -156,10 +157,9 @@
                 }
                 // console.log(newFriend);
 
-            $.post("/api/friends", newFriend, function(data) {
-                if (data) {
-                    alert("Form submitted, See who you match with.")
-                }
+            $.post("/api/addFriend", newFriend, function(data) {
+                console.log(data);
+
             })
 
         });
