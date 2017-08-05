@@ -11,7 +11,7 @@
 
 <body>
     <div class="container">
-        <form action="" method="PUT">
+        <form action="" method="POST">
             <h1>Survey Questions</h1>
             <hr/>
             <h3><strong>About Me</strong></h3>
@@ -21,11 +21,11 @@
             </div>
             <div class="form-group">
                 <label for="PUT-name">Link to Photo Image (Required)</label>
-                <input class="form-text form-control" type="text" id="PUT-name" name="name">
+                <input class="form-text form-control" type="text" id="PUT-photo" name="name">
             </div>
             <div class="form-group">
                 <p>Your mind is always buzzing with unexplored ideas and plans.</p>
-                <select class="custom-select mb-2 mr-sm-2 mb-sm-0 form-control" id="inlineFormCustomSelect" id="question1">
+                <select class="custom-select mb-2 mr-sm-2 mb-sm-0 form-control" id="question1">
                     <option>Select an Option</option>
                     <option>1 (Strongly Disagree)</option>
                     <option>2</option>
@@ -36,7 +36,7 @@
             </div>
             <div class="form-group">
                 <p>Generally speaking, you rely more on your experience than your imagination.</p>
-                <select class="custom-select mb-2 mr-sm-2 mb-sm-0 form-control" id="inlineFormCustomSelect" id="question2">
+                <select class="custom-select mb-2 mr-sm-2 mb-sm-0 form-control" id="question2">
                     <option>Select an Option</option>
                     <option>1 (Strongly Disagree)</option>
                     <option>2</option>
@@ -47,7 +47,7 @@
             </div>
             <div class="form-group">
                 <p>You find it easy to stay relaxed and focused even when there is some pressure.</p>
-                <select class="custom-select mb-2 mr-sm-2 mb-sm-0 form-control" id="inlineFormCustomSelect" id="question3">
+                <select class="custom-select mb-2 mr-sm-2 mb-sm-0 form-control" id="question3">
                     <option>Select an Option</option>
                     <option>1 (Strongly Disagree)</option>
                     <option>2</option>
@@ -58,7 +58,7 @@
             </div>
             <div class="form-group">
                 <p>You rarely do something just out of sheer curiosity.</p>
-                <select class="custom-select mb-2 mr-sm-2 mb-sm-0 form-control" id="inlineFormCustomSelect" id="question3">
+                <select class="custom-select mb-2 mr-sm-2 mb-sm-0 form-control" id="question4">
                     <option>Select an Option</option>
                     <option>1 (Strongly Disagree)</option>
                     <option>2</option>
@@ -69,7 +69,7 @@
             </div>
             <div class="form-group">
                 <p>People can rarely upset you.</p>
-                <select class="custom-select mb-2 mr-sm-2 mb-sm-0 form-control" id="inlineFormCustomSelect" id="question4">
+                <select class="custom-select mb-2 mr-sm-2 mb-sm-0 form-control" id="question5">
                     <option>Select an Option</option>
                     <option>1 (Strongly Disagree)</option>
                     <option>2</option>
@@ -80,7 +80,7 @@
             </div>
             <div class="form-group">
                 <p>In a discussion, truth should be more important than people’s sensitivities.</p>
-                <select class="custom-select mb-2 mr-sm-2 mb-sm-0 form-control" id="inlineFormCustomSelect" id="question5">
+                <select class="custom-select mb-2 mr-sm-2 mb-sm-0 form-control" id="question6">
                     <option>Select an Option</option>
                     <option>1 (Strongly Disagree)</option>
                     <option>2</option>
@@ -91,7 +91,7 @@
             </div>
             <div class="form-group">
                 <p>You rarely get carried away by fantasies and ideas.</p>
-                <select class="custom-select mb-2 mr-sm-2 mb-sm-0 form-control" id="inlineFormCustomSelect" id="question6">
+                <select class="custom-select mb-2 mr-sm-2 mb-sm-0 form-control" id="question7">
                     <option>Select an Option</option>
                     <option>1 (Strongly Disagree)</option>
                     <option>2</option>
@@ -102,7 +102,7 @@
             </div>
             <div class="form-group">
                 <p>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</p>
-                <select class="custom-select mb-2 mr-sm-2 mb-sm-0 form-control" id="inlineFormCustomSelect" id="question7">
+                <select class="custom-select mb-2 mr-sm-2 mb-sm-0 form-control" id="question8">
                     <option>Select an Option</option>
                     <option>1 (Strongly Disagree)</option>
                     <option>2</option>
@@ -113,7 +113,7 @@
             </div>
             <div class="form-group">
                 <p>Your mind is always buzzing with unexplored ideas and plans.</p>
-                <select class="custom-select mb-2 mr-sm-2 mb-sm-0 form-control" id="inlineFormCustomSelect" id="question8">
+                <select class="custom-select mb-2 mr-sm-2 mb-sm-0 form-control" id="question9">
                     <option>Select an Option</option>
                     <option>1 (Strongly Disagree)</option>
                     <option>2</option>
@@ -124,7 +124,7 @@
             </div>
             <div class="form-group">
                 <p>You feel more energetic after spending time with a group of people.</p>
-                <select class="custom-select mb-2 mr-sm-2 mb-sm-0 form-control" id="inlineFormCustomSelect" id="question9">
+                <select class="custom-select mb-2 mr-sm-2 mb-sm-0 form-control" id="question10">
                     <option>Select an Option</option>
                     <option>1 (Strongly Disagree)</option>
                     <option>2</option>
@@ -140,10 +140,30 @@
         <br/>
         <!--end main container  -->
     </div>
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script>
+        console.log("yup!");
+        $("#submit-survey").on("click", function(event) {
+            event.preventDefault();
+            let newFriend = {
+                    name: $("#PUT-name").val().trim(),
+                    photo: $("#PUT-photo").val().trim(),
+                    scores: [
+                        $("#question1").val().slice(0, 1), $("#question2").val().slice(0, 1), $("#question3").val().slice(0, 1), $("#question4").val().slice(0, 1), $("#question5").val().slice(0, 1), $("#question6").val().slice(0, 1), $("#question7").val().slice(0, 1), $("#question8").val().slice(0, 1), $("#question9").val().slice(0, 1), $("#question10").val().slice(0, 1),
+                    ]
+                }
+                // console.log(newFriend);
+
+            $.post("/api/friends", newFriend, function(data) {
+                if (data) {
+                    alert("Form submitted, See who you match with.")
+                }
+            })
+
+        });
+    </script>
 </body>
 
 </html>
