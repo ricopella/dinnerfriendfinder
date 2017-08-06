@@ -6,15 +6,21 @@ const express = require('express');
 module.exports = app => {
 
     app.post("/api/addFriend", function(req, res) {
+
+        // bug repair - convert all scores to integers
+        var newScores = req.body.scores.map(function(score) {
+            return parseInt(score);
+        });
+
+        req.body.scores = newScores;
+
         // push submitted form to friendList
-        // console.log(friendList);
         friendList.push(req.body);
         res.json(true);
+        console.log(friendList);
     });
 
     app.get("/api/friends/:user_id?", function(req, res) {
         res.json(friendList)
     });
-
-
 }
