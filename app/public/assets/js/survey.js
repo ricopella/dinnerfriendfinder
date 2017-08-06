@@ -16,6 +16,7 @@ $("#submit-survey").on("click", function(event) {
     //  Form validation
     for (let i = 0; i < scores.length; i++) {
         if (newFriend.name == "" || newFriend.photo == "") {
+            // show error modal
             $("#incompleteForm").modal('show');
             return false;
         }
@@ -66,6 +67,7 @@ $("#submit-survey").on("click", function(event) {
                         bestMatchObj = data[i];
 
                     } else {
+
                         break;
                     }
                 }

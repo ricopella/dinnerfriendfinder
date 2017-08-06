@@ -17,7 +17,6 @@ module.exports = app => {
         // push submitted form to friendList
         friendList.push(req.body);
         res.json(true);
-        console.log(friendList);
     });
 
     app.get("/api/friends/:user_id?", function(req, res) {
