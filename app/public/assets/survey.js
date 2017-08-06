@@ -13,13 +13,21 @@ $("#submit-survey").on("click", function(event) {
         scores: scores
     }
 
+    //  Form validation
+    for (let i = 0; i < scores.length; i++) {
+        if (newFriend.name == "" || newFriend.photo == "" || newFriend.scores[i] == NaN || newFriend.scores[i] == undefined || newFriend.scores[i] == null) {
+            alert("Please Complete the Form");
+            console.log("hit me!");
+            return false;
+        }
+    }
+
     $.post("/api/addFriend", newFriend, function(data) {
         return true;
     }).then(function() {
 
         $.get("/api/friends", function(data) {
-            console.log("data");
-            console.log(data);
+
             let bestMatch = 0;
             let bestMatchObj;
             let matchFound = false;
@@ -34,8 +42,7 @@ $("#submit-survey").on("click", function(event) {
                 for (let j = 0; j < 10; j++) {
                     // input user array subtract absolute value to 
                     difference += Math.abs(data[friendsLength - 1].scores[j] - data[i].scores[j]);
-                    console.log("yo:" + newFriend.scores[j] + " " + data[i].scores[j]);
-                    console.log(difference);
+
                 }
 
                 // if match not found (1st round)
@@ -46,7 +53,7 @@ $("#submit-survey").on("click", function(event) {
                     bestMatchObj = data[i];
 
                     matchFound = true;
-                    console.log(bestMatchObj);
+
 
                     //  if match has been found
                 } else {
@@ -64,7 +71,7 @@ $("#submit-survey").on("click", function(event) {
                     }
                 }
             }
-            console.log(bestMatchObj);
+
             // best match result data to modal 
             $("#bestMatch").modal('show');
             $("#matchName").text(bestMatchObj.name);

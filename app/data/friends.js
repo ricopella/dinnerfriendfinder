@@ -41,16 +41,16 @@ let friendList = [{
         "name": "Narin",
         "photo": "https://pbs.twimg.com/profile_images/881945633673723904/hVFKpojF_400x400.jpg",
         "scores": [
-            3,
-            3,
-            5,
-            2,
+            4,
             3,
             2,
-            5,
-            1,
             3,
-            1
+            4,
+            2,
+            5,
+            5,
+            3,
+            5
         ]
     }
 ]
