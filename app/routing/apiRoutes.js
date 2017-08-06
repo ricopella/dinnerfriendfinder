@@ -7,7 +7,7 @@ module.exports = app => {
 
     app.post("/api/addFriend", function(req, res) {
         // push submitted form to friendList
-        console.log(friendList);
+        // console.log(friendList);
         friendList.push(req.body);
         res.json(true);
     });
