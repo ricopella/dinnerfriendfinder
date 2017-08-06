@@ -14,20 +14,16 @@ $("#submit-survey").on("click", function(event) {
     }
 
     $.post("/api/addFriend", newFriend, function(data) {
+        return true;
+    }).then(function() {
 
-    }).then(function(newFriend) {
-        console.log("reached me");
-        console.log(newFriend);
         $.get("/api/friends", function(data) {
             console.log("data");
             console.log(data);
-            let winnerTotal = 0;
             let bestMatch = 0;
             let bestMatchObj;
             let matchFound = false;
             let friendsLength = data.length;
-
-            console.log("this: " + data[0].scores[0]);
 
             //  loop through friends
             for (let i = 0; i < data.length - 1; i++) {
@@ -35,38 +31,45 @@ $("#submit-survey").on("click", function(event) {
                 let difference = 0;
 
                 // loop through questions
-                for (let j = 0; j <= 10; j++) {
-
+                for (let j = 0; j < 10; j++) {
+                    // input user array subtract absolute value to 
                     difference += Math.abs(data[friendsLength - 1].scores[j] - data[i].scores[j]);
+                    console.log("yo:" + newFriend.scores[j] + " " + data[i].scores[j]);
+                    console.log(difference);
                 }
 
                 // if match not found (1st round)
                 if (!matchFound) {
                     //  set difference to highest score
-                    bestMatch = difference
-                        //  set match object for recall
+                    bestMatch = difference;
+                    //  set match object for recall
                     bestMatchObj = data[i];
 
                     matchFound = true;
+                    console.log(bestMatchObj);
 
                     //  if match has been found
                 } else {
                     //  if previous best matchFound is greater than difference
-                    if (bestMatch > difference) {
+                    if (difference < bestMatch) {
 
                         // reset best match
                         bestMatch = difference;
 
                         // reset match object
                         bestMatchObj = data[i];
+
+                    } else {
+                        break;
                     }
                 }
-
-                // best match result data to modal 
-                $("#matchName").text(bestMatchObj.name);
-                $("#matchPhoto").attr("src", bestMatchObj.photo);
-                $("#bestMatch").modal('show');
             }
+            console.log(bestMatchObj);
+            // best match result data to modal 
+            $("#bestMatch").modal('show');
+            $("#matchName").text(bestMatchObj.name);
+            $("#matchPhoto").attr("src", bestMatchObj.photo);
+
         })
     })
 
