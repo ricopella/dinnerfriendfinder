@@ -60,6 +60,7 @@ $("#submit-survey").on("click", function(event) {
                         bestMatchObj = data[i];
 
                     } else {
+                        // difference is greater than previous bestMatch, winner!
                         break;
                     }
                 }
