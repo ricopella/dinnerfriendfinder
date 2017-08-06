@@ -7,11 +7,12 @@ module.exports = app => {
 
     app.post("/api/addFriend", function(req, res) {
         // push submitted form to friendList
+        console.log(friendList);
         friendList.push(req.body);
         res.json(true);
     });
 
-    app.get("/api/friends", function(req, res) {
+    app.get("/api/friends/:user_id?", function(req, res) {
         res.json(friendList)
     });
 

@@ -10,6 +10,8 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
 const PORT = process.env.PORT || 8080;
 
+app.use(express.static(__dirname + '/app/public'));
+
 require("./app/routing/apiRoutes")(app);
 require("./app/routing/htmlRoutes")(app);
 
