@@ -6,145 +6,146 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Dinner Survey</title>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/survey.css">
+
 </head>
 
 <body>
+    <br />
     <div class="container">
-        <form>
-            <h1>Survey Questions</h1>
+        <div class="jumbotron">
+            <form>
+                <h1>Dinner Friend Finder</h1>
+                <hr/>
+                <h3><strong>About Me</strong></h3>
+                <br />
+                <div class="form-group">
+                    <label for="PUT-name"><h5>Name <em>(Required)</em></h5></label>
+                    <input class="form-text form-control" type="text" id="PUT-name" name="name">
+                </div>
+                <div class="form-group">
+                    <label for="PUT-name"><h5>Link to Photo Image <em>(Required)</em></h5> </label>
+                    <input class="form-text form-control" type="text" id="PUT-photo" name="name">
+                </div>
+                <br />
+                <h3><strong>Questions</strong></h3>
+                <br />
+                <div class="form-group">
+                    <h5>It's important that your wine or beer compliment your entree.</h5>
+                    <select class="custom-select mb-2 mr-sm-2 mb-sm-0 form-control" id="question1">
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                </div>
+                <div class="form-group">
+                    <h5>I prefer noodles over rice.</h5>
+                    <select class="custom-select mb-2 mr-sm-2 mb-sm-0 form-control" id="question2">
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                </div>
+                <div class="form-group">
+                    <h5>The atmoshphere & experience is more important than the menu & taste.</h5>
+                    <select class="custom-select mb-2 mr-sm-2 mb-sm-0 form-control" id="question3">
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                </div>
+                <div class="form-group">
+                    <h5>Large portions are better than presenation.</h5>
+                    <select class="custom-select mb-2 mr-sm-2 mb-sm-0 form-control" id="question4">
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                </div>
+                <div class="form-group">
+                    <h5>I'll wait over 30 minutes for a good meal.</h5>
+                    <select class="custom-select mb-2 mr-sm-2 mb-sm-0 form-control" id="question5">
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                </div>
+                <div class="form-group">
+                    <h5>I like eating at the same place multiple times.</h5>
+                    <select class="custom-select mb-2 mr-sm-2 mb-sm-0 form-control" id="question6">
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                </div>
+                <div class="form-group">
+                    <h5>I'd rather Family Style / Sharing plates over ordering my own meal and not sharing.</h5>
+                    <select class="custom-select mb-2 mr-sm-2 mb-sm-0 form-control" id="question7">
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                </div>
+                <div class="form-group">
+                    <h5>I prefer a creative menu over an authentic style menu.</h5>
+                    <select class="custom-select mb-2 mr-sm-2 mb-sm-0 form-control" id="question8">
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                </div>
+                <div class="form-group">
+                    <h5>I'd rather tapa's and small plates so I can try multiple items off the menu.</h5>
+                    <select class="custom-select mb-2 mr-sm-2 mb-sm-0 form-control" id="question9">
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                </div>
+                <div class="form-group">
+                    <h5>Dessert is an important piece to my meal.</h5>
+                    <select class="custom-select mb-2 mr-sm-2 mb-sm-0 form-control" id="question10">
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                </div>
+                <button type="button" name="submit-survey" id="submit-survey" class="btn btn-primary btn-lg btn-block">Submit</button>
+            </form>
+
             <hr/>
-            <h3><strong>About Me</strong></h3>
-            <div class="form-group">
-                <label for="PUT-name">Name (Required)</label>
-                <input class="form-text form-control" type="text" id="PUT-name" name="name">
-            </div>
-            <div class="form-group">
-                <label for="PUT-name">Link to Photo Image (Required)</label>
-                <input class="form-text form-control" type="text" id="PUT-photo" name="name">
-            </div>
-            <div class="form-group">
-                <p>It's important that your wine or beer compliment your entree.</p>
-                <select class="custom-select mb-2 mr-sm-2 mb-sm-0 form-control" id="question1">
-                    <option>Select an Option</option>
-                    <option value="1">1 (Strongly Disagree)</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 (Strongly Agree)</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <p>I prefer noodles over rice.</p>
-                <select class="custom-select mb-2 mr-sm-2 mb-sm-0 form-control" id="question2">
-                    <option>Select an Option</option>
-                    <option value="1">1 (Strongly Disagree)</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 (Strongly Agree)</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <p>The atmoshphere & experience is more important than the menu & taste.</p>
-                <select class="custom-select mb-2 mr-sm-2 mb-sm-0 form-control" id="question3">
-                    <option>Select an Option</option>
-                    <option value="1">1 (Strongly Disagree)</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 (Strongly Agree)</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <p>Large portions are better than presenation.</p>
-                <select class="custom-select mb-2 mr-sm-2 mb-sm-0 form-control" id="question4">
-                    <option>Select an Option</option>
-                    <option value="1">1 (Strongly Disagree)</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 (Strongly Agree)</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <p>I'll wait over 30 minutes for a good meal.</p>
-                <select class="custom-select mb-2 mr-sm-2 mb-sm-0 form-control" id="question5">
-                    <option>Select an Option</option>
-                    <option value="1">1 (Strongly Disagree)</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 (Strongly Agree)</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <p>I like eating at the same place multiple times.</p>
-                <select class="custom-select mb-2 mr-sm-2 mb-sm-0 form-control" id="question6">
-                    <option>Select an Option</option>
-                    <option value="1">1 (Strongly Disagree)</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 (Strongly Agree)</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <p>I'd rather Family Style / Sharing plates over ordering my own meal and not sharing.</p>
-                <select class="custom-select mb-2 mr-sm-2 mb-sm-0 form-control" id="question7">
-                    <option>Select an Option</option>
-                    <option value="1">1 (Strongly Disagree)</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 (Strongly Agree)</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <p>I prefer a creative menu over an authentic style menu.</p>
-                <select class="custom-select mb-2 mr-sm-2 mb-sm-0 form-control" id="question8">
-                    <option>Select an Option</option>
-                    <option value="1">1 (Strongly Disagree)</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 (Strongly Agree)</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <p>I'd rather tapa's and small plates so I can try multiple items off the menu.</p>
-                <select class="custom-select mb-2 mr-sm-2 mb-sm-0 form-control" id="question9">
-                    <option>Select an Option</option>
-                    <option value="1">1 (Strongly Disagree)</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 (Strongly Agree)</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <p>Dessert is an important piece to my meal.</p>
-                <select class="custom-select mb-2 mr-sm-2 mb-sm-0 form-control" id="question10">
-                    <option>Select an Option</option>
-                    <option value="1">1 (Strongly Disagree)</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 (Strongly Agree)</option>
-                </select>
-            </div>
-            <button type="button" name="submit-survey" id="submit-survey" class="btn btn-primary btn-lg btn-block">Submit</button>
-        </form>
+            <br/>
 
-        <hr/>
-        <br/>
-
-        <footer>
-            <div class="container">
-                <p><a href="/api/friends">Friends List</a> | <a href="https://github.com/ricopella/friendfinder">GitHub Repo</a></p>
-            </div>
-        </footer>
-        <!--end main container  -->
+            <footer>
+                <div class="container">
+                    <p><a href="/api/friends">Friends List</a> | <a href="https://github.com/ricopella/friendfinder">GitHub Repo</a></p>
+                </div>
+            </footer>
+            <!--end main container  -->
+        </div>
     </div>
 
     <div class="modal fade" id="bestMatch" tabindex="-1" role="dialog">
@@ -168,10 +169,30 @@
     </div>
     <!-- /.modal -->
 
+    <div class="modal fade" id="incompleteForm" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">ERROR</h4>
+                </div>
+                <div class="modal-body">
+                    <p>PLEASE MAKE SURE TO ENTER YOUR INFORMATION</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-    <script src="/assets/survey.js"></script>
+    <script src="/assets/js/survey.js"></script>
 </body>
 
 </html>

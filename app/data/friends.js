@@ -23,7 +23,7 @@ Example Data:
 
 let friendList = [{
         "name": "David Ortiz",
-        "photo": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Ortizpoint.jpg",
+        "photo": "https://connorlenahan.files.wordpress.com/2013/09/davidortiz_090413_blogcut.jpg",
         "scores": [
             5,
             1,

@@ -15,9 +15,8 @@ $("#submit-survey").on("click", function(event) {
 
     //  Form validation
     for (let i = 0; i < scores.length; i++) {
-        if (newFriend.name == "" || newFriend.photo == "" || newFriend.scores[i] == NaN || newFriend.scores[i] == undefined || newFriend.scores[i] == null) {
-            alert("Please Complete the Form");
-            console.log("hit me!");
+        if (newFriend.name == "" || newFriend.photo == "") {
+            $("#incompleteForm").modal('show');
             return false;
         }
     }

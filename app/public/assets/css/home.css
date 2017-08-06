@@ -1,0 +1,59 @@
+body {
+    background-image: url('../images/restwp.jpg');
+    background-size: cover;
+    font-family: 'Merriweather', serif;
+}
+
+.extracontainer {
+    min-height: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.vertical-center {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+}
+
+.vertical-center h1,
+.vertical-center p {
+    padding: 1% 0 1% 1%;
+}
+
+.vertical-center a {
+    margin: 0 auto;
+}
+
+h1 {
+    color: white;
+    font-size: 100px;
+}
+
+p {
+    font-size: 25px;
+    color: white;
+}
+
+.api-links {
+    margin: 0 auto;
+}
+
+p.api-links,
+a {
+    font-size: 17px;
+    color: white;
+    padding: 0 0 3% 0;
+}
+
+
+/* @media (max-width: 511px) {
+    h1 {
+        font-size: 47px;
+    }
+    p {
+        font-size: 17px;
+    }
+} */
