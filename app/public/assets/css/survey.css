@@ -8,6 +8,22 @@ body {
     width: 100%;
 }
 
+.jumbotron {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+}
+
+form h1,
+form h3,
+form h5,
+footer a {
+    color: white;
+}
+
+#matchName {
+    font-size: 40px;
+}
+
 footer p {
     margin: 0 auto;
 }
