@@ -13,8 +13,8 @@ var exphbs = require("express-handlebars");
 
 app.use(express.static(__dirname + '/app/public'));
 
-app.engine("hbs", exphbs({ extname: 'hbs', defaultLayout: "main", layoutsDir: __dirname + 'views/layouts/' }));
-app.set("view engine", "hbs");
+app.engine("handlebars", exphbs({ defaultLayout: "main" }));
+app.set("view engine", "handlebars");
 
 require("./app/routing/apiRoutes")(app);
 require("./app/routing/htmlRoutes")(app);
